@@ -5,3 +5,101 @@
 /* TODO: style .card (padding, border, gap) and .card-grid (display, gap, 3 columns) */
 /* TODO: style form inputs (padding) and a :focus state */
 /* TODO: add a @media (max-width: 700px) query collapsing .card-grid to one column */
+
+body{
+   font-family: system-ui, -apple-system, sans-serif;
+   line-height: 1.5;
+   margin: 0;
+   padding: 16px;
+}
+
+#site-header {
+   padding: 20px;
+   border-bottom:2px solid #ccc;
+}
+
+.main-nav a{
+  margin: 16px;
+   color: #0066cc;
+  text-decoration: none;
+}
+
+.schedule-table{
+   width: 100%;
+   border-collapse: collapse;
+}
+
+.schedule-table th, td {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.schedule-table th {
+  background-color: #f4f4f4;
+}
+
+.card-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns:1fr 1fr 1fr;
+}
+
+
+.card {
+  padding: 16px;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+}
+
+.card .weight {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 10px;
+}
+
+.register-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+
+.register-form input:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.btn-primary {
+  padding: 10px;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.btn-primary:hover {
+  background-color: #0052a3;
+}
+
+.site-footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #676565;
+}
+
+
+@media (max-width: 700px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
